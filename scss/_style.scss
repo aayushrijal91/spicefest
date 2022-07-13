@@ -1,0 +1,63 @@
+@function imgUrl($file, $path: "background") {
+    @return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    background: imgUrl("clouds.png") center bottom, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
+    background-size: contain;
+
+    .hero-img {
+        position: relative;
+
+        .buy-tickets {
+            position: absolute;
+            right: 8rem;
+            top: 16rem;
+            z-index: 1;
+        }
+
+        .spicefest {
+            position: relative;
+            z-index: 100 !important;
+        }
+
+        .location {
+            background: linear-gradient(180deg, #ff7222 0%, #e43b16 100%);
+            border-radius: 7.97678px;
+            transform: rotate(6.22deg);
+            color: $white;
+            font-size: 41.62px;
+            letter-spacing: -0.05em;
+            text-align: center;
+            display: inline-block;
+            padding: 24px;
+            position: absolute;
+            bottom: -4rem;
+            left: 12%;
+            z-index: 2;
+        }
+
+        .date {
+            color: #fff;
+            letter-spacing: -0.05em;
+            font-size: 74.92px;
+            line-height: 1;
+            text-align: center;
+            display: inline-block;
+            padding: 24px 60px;
+            background: linear-gradient(180deg, #ee0202 0%, #d60707 100%);
+            border-radius: 5.84235px;
+            transform: rotate(-11.45deg);
+            position: absolute;
+            font-family: "Poppins", sans-serif;
+            bottom: -5rem;
+            right: 18%;
+            z-index: 3;
+            font-weight: 900;
+        }
+    }
+}
+
+section.main {
+    background: linear-gradient(180deg, #ff7832 11.6%, #fa7035 99.62%);
+}
