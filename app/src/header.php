@@ -29,19 +29,29 @@
 				<div class="row justify-content-end align-items-center">
 					<div class="col-auto">
 						<div class="row justify-content-center justify-content-lg-end no-gutters align-items-center">
-							<div class="col-12 col-md-auto ml-lg-3 mr-2 mr-lg-0">
-								<a href="#form-quote" class="btn btn-block btn-primary rounded-0 text-white py-3 px-md-5">
-									Get A Quote
-								</a>
+							<div class="col-auto font-poppins h20">
+								This Event is <span class="fw-700">Proudly Sponsored</span> by
 							</div>
-							<div class="col-12 col-md-auto ml-lg-2">
-								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-secondary rounded-0 text-white py-3 px-md-5">
-									Call Us <?= $phone_number ?>
-								</a>
+							<div class="col-auto">
+								<?= renderImg("australian-india.png", "logo") ?>
+							</div>
+							<div class="col-auto">
+								<?= renderImg("nsw-gov.png", "logo") ?>
+							</div>
+							<div class="col-auto">
+								<?= renderImg("parramatta-council.png", "logo") ?>
+							</div>
+							<div class="col-auto">
+								<?= renderImg("investment-nsw.png", "logo") ?>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<?= renderImg("fia-presents.png", "lib", "fia-presents") ?>
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-auto">
 						<div class="hero-img">
@@ -49,6 +59,20 @@
 							<?= renderImg("buy-tickets.png", "lib", "buy-tickets") ?>
 							<div class="location">Prince Alfred Square<br>&amp; Riverside Theatres</div>
 							<div class="date">7 August</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center timing">
+					<div class="col-auto">
+						<div class="bg-primary p-3 d-flex align-items-center">
+							<div class="text-gradient-red h11">Date</div>
+							<div class="font-gothic h8 ps-3 fw-900 letter-spacing-n07">7 August 2022</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="bg-primary p-3 d-flex align-items-center">
+							<div class="text-gradient-red h11">Time</div>
+							<div class="font-gothic h8 ps-3 fw-900 letter-spacing-n07">10am - 9pm</div>
 						</div>
 					</div>
 				</div>

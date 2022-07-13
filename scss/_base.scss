@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    letter-spacing: -0.05em;
+    color: $dark;
 }
 
 .btn:focus {
@@ -36,6 +38,20 @@ body {
 
 .line-height-2 {
     line-height: 2;
+}
+
+.letter-spacing-n07 {
+    letter-spacing: -0.07em;
+}
+
+// Gradient Text
+
+.text-gradient-red {
+    background: linear-gradient(180deg, #ee0202 0%, #d60707 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 //Go To Top
