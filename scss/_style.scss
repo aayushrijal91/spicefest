@@ -3,9 +3,9 @@
 }
 
 header {
-    background: imgUrl("clouds.png") center bottom, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
+    background: imgUrl("clouds.png") center 128%, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
     background-size: contain;
-    padding: 48px 0;
+    padding: 48px 0 181px;
 
     .banner {
         position: relative;
@@ -72,5 +72,66 @@ header {
 }
 
 section.main {
-    background: linear-gradient(180deg, #ff7832 11.6%, #fa7035 99.62%);
+    background: linear-gradient(180deg, #ff7631 11.6%, #fa7035 99.62%);
+
+    .event-category {
+        .category-card {
+            height: 100%;
+            background: linear-gradient(180deg, #e24a29 0%, #ff5732 100%);
+            padding: 22px 36.71px 36.71px;
+            position: relative;
+
+            .title {
+                font-size: 2.364375rem; // 37.83px
+                text-align: center;
+                line-height: 1;
+                padding-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            .window {
+                height: 409px;
+                width: 100%;
+                padding: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                &.win1 {
+                    background: imgUrl("category-outdoor.jpg") center;
+                    background-size: cover;
+                }
+
+                &.win2 {
+                    background: imgUrl("category-indoor.jpg") center;
+                    background-size: cover;
+                }
+            }
+
+            .free-entry-circle {
+                position: absolute;
+                top: 2.5rem;
+                left: -3rem;
+            }
+
+            .held-at-circle {
+                position: absolute;
+                top: 0;
+                top: 2.5rem;
+                right: -4rem;
+            }
+        }
+    }
+
+    .festival-overview {
+        padding: 195px 0 222px;
+        background: imgUrl("festival-overview.png") center bottom;
+        background-size: contain;
+    }
 }
