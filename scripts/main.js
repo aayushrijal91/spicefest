@@ -58,11 +58,17 @@ $(() => {
         centerMode: true,
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            },
+            {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    centerMode: false,
-                    centerPadding: 0,
                 }
             }
         ]
@@ -79,11 +85,17 @@ $(() => {
         infinite: true,
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            },
+            {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    centerMode: false,
-                    centerPadding: 0,
                 }
             }
         ]
@@ -102,17 +114,23 @@ $(() => {
         centerMode: true,
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            },
+            {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    centerMode: false,
-                    centerPadding: 0,
                 }
             }
         ]
     });
 
-    if ($(window).width() < 900) {
+    if ($(window).width() < 1100) {
         $(".event-inclusion-slider").slick({
             slidesToShow: 2,
             slidesToScroll: 1,

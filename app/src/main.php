@@ -24,8 +24,8 @@ include __DIR__ . '/header.php';
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-11">
-                    <div class="row gy-4 gy-lg-0 gx-4">
-                        <div class="col-lg-6 h-inherit">
+                    <div class="row gy-4 gy-lg-5 gy-xl-0 gx-4">
+                        <div class="col-xl-6 h-inherit">
                             <div class="category-card">
                                 <?= renderImg("free-entry-circle.png", "lib", "free-entry-circle") ?>
                                 <div class="title">
@@ -46,7 +46,7 @@ include __DIR__ . '/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 h-inherit">
+                        <div class="col-xl-6 h-inherit">
                             <div class="category-card">
                                 <?= renderImg("held-at-circle.png", "lib", "held-at-circle") ?>
                                 <div class="title">
@@ -95,9 +95,9 @@ include __DIR__ . '/header.php';
                             <div class="description py-4 pe-xxl-4">
                                 Welcome to a unique day and night festival experience held both indoor and outdoors, where spicy food, music and dance coalesce culminating in proximity fireworks!
                             </div>
-                            <div class="d-none d-lg-block pt-3"><a href="#form" class="btn btn-spicy px-6 py-3 enquire-btn">Enquire</a></div>
+                            <div class="d-none d-xl-block pt-3"><a href="#form" class="btn btn-spicy px-6 py-3 enquire-btn">Enquire</a></div>
                         </div>
-                        <div class="col-12 col-xl-7 pt-2 pt-lg-0">
+                        <div class="col-12 col-xl-7 pt-2 pt-xl-0">
                             <div class="about-slider">
                                 <div><?= renderImg("about-1.png", "lib", "w-100") ?></div>
                                 <div><?= renderImg("about-2.png", "lib", "w-100") ?></div>
@@ -106,7 +106,7 @@ include __DIR__ . '/header.php';
                                 <div><?= renderImg("about-5.png", "lib", "w-100") ?></div>
                             </div>
                         </div>
-                        <div class="col-12 d-lg-none pt-5"><a href="#form" class="btn btn-spicy enquire-btn p-3">Enquire</a></div>
+                        <div class="col-12 d-xl-none pt-5"><a href="#form" class="btn btn-spicy enquire-btn p-3">Enquire</a></div>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ include __DIR__ . '/header.php';
             <div class="float-title"><span>Outdoor</span> event includes</div>
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-11">
-                    <div class="row g-lg-5 event-inclusion-slider">
+                    <div class="row g-xl-5 event-inclusion-slider">
                         <div class="col-md-4">
                             <div class="inclusion-card free-entry">
                                 <div class="caption">Free Entry</div>
@@ -165,7 +165,7 @@ include __DIR__ . '/header.php';
                     <div class="content">
                         <div class="row align-items-center">
                             <div class="col-auto d-none d-md-block"><?= renderImg("riverside-theatre.png", "logo") ?></div>
-                            <div class="col ps-lg-6">
+                            <div class="col ps-xl-6">
                                 <div class="d-md-none text-white ticket-text">(Ticketed Event)</div>
                                 <div class="text-white h6">Theatrical Performances <span class="h13 d-none d-md-inline">(Ticketed Event)</span></div>
                                 <div class="row align-items-center pt-4">

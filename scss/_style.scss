@@ -25,7 +25,7 @@ header {
                 top: -5%;
             }
 
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
                 display: none;
             }
         }
@@ -42,6 +42,11 @@ header {
                 @include media-breakpoint-only(xl) {
                     right: 0;
                     top: 8rem;
+                }
+
+                @include media-breakpoint-down(xl) {
+                    right: 0;
+                    top: 6rem;
                 }
 
                 @include media-breakpoint-down(lg) {
@@ -81,8 +86,15 @@ header {
                     bottom: -6.5rem;
                 }
 
+                @include media-breakpoint-down(xl) {
+                    font-size: 2rem;
+                    left: 8%;
+                    bottom: -5rem;
+                }
+
                 @include media-breakpoint-down(lg) {
                     font-size: 1.5rem;
+                    bottom: -4rem;
                     left: 8%;
                 }
 
@@ -116,10 +128,17 @@ header {
                     bottom: -5.5rem;
                 }
 
+                @include media-breakpoint-down(xl) {
+                    font-size: 4rem;
+                    right: 8%;
+                    bottom: -5rem;
+                }
+
                 @include media-breakpoint-down(lg) {
                     font-size: 2.5rem;
                     padding: 20px 48px;
                     right: 8%;
+                    bottom: -3.5rem;
                 }
 
                 @include media-breakpoint-down(sm) {
@@ -227,6 +246,10 @@ section.main {
                 top: 2.5rem;
                 left: -3rem;
 
+                @include media-breakpoint-down(xl) {
+                    left: -0.3rem;
+                }
+
                 @include media-breakpoint-down(lg) {
                     left: -1rem;
                 }
@@ -243,6 +266,10 @@ section.main {
                 top: 0;
                 top: 2.5rem;
                 right: -4rem;
+
+                @include media-breakpoint-down(xl) {
+                    right: -0.3rem;
+                }
 
                 @include media-breakpoint-down(lg) {
                     right: -1rem;
@@ -285,7 +312,7 @@ section.main {
             background: imgUrl("festival-overview.png") center bottom;
             background-size: contain;
         }
-        
+
         @include media-breakpoint-up(lg) {
             padding: 195px 0 222px;
         }
@@ -348,12 +375,12 @@ section.main {
             padding: 102px 0 200px;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
             padding: 282px 0 437px;
         }
 
         .float-title {
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(xl) {
                 position: absolute;
                 top: -4rem;
                 left: -2rem;
@@ -365,7 +392,7 @@ section.main {
                 transform: rotate(-19.35deg);
             }
 
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
                 font-size: 4rem;
                 line-height: 1;
                 text-transform: capitalize;
@@ -377,7 +404,7 @@ section.main {
             }
         }
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             .event-inclusion-slider {
                 .slick-slide {
                     margin: 0 6px;
@@ -441,7 +468,7 @@ section.main {
         }
 
         .float-title {
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(xl) {
                 position: absolute;
                 top: -4rem;
                 left: -2rem;
@@ -453,7 +480,7 @@ section.main {
                 transform: rotate(-19.35deg);
             }
 
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
                 font-size: 4rem;
                 line-height: 1;
                 text-transform: capitalize;
@@ -489,6 +516,11 @@ section.main {
             font-size: 6rem; // 96px
             margin-bottom: 0;
             line-height: 1;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 5rem;
+                padding-top: 200px;
+            }
 
             @include media-breakpoint-down(lg) {
                 font-size: 4rem;

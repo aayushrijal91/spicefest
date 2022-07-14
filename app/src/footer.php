@@ -5,7 +5,7 @@
 				<div class="col-auto">
 					<a href="./"><?= renderImg("footer-logo.png", "logo") ?></a>
 				</div>
-				<div class="col-12 col-md-5 col-xxl-auto d-md-none d-lg-block">
+				<div class="col-12 col-md-5 col-xxl-auto d-md-none d-xl-block">
 					<div class="py-5 pt-md-0 ps-xxl-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
 					<div class="row">
 						<div class="col-12 col-md-auto">
@@ -34,14 +34,14 @@
 				<div class="col-auto pt-5 pt-md-0">
 					<?= renderImg("disclaimer.png", "lib") ?>
 				</div>
-				<div class="col-12 d-none d-md-block d-lg-none pt-6">
+				<div class="col-12 d-none d-md-block d-xl-none pt-6">
 					<div class="py-5 pt-md-0 ps-xxl-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
-					<div class="row">
-						<div class="col-12 col-md-auto">
+					<div class="row justify-content-center">
+						<div class="col-md-auto">
 							<div class="h19 text-primary">Date <span class="ps-2 text-white font-gothic fw-800">7 August 2022</span></div>
 							<div class="h19 text-primary">Time <span class="ps-2 text-white font-gothic fw-800">10am - 9pm</span></div>
 						</div>
-						<div class="col-12 col-md col-xxl-auto d-flex pt-3 pt-md-0">
+						<div class="col-md-auto col-xxl-auto d-flex pt-3 pt-md-0">
 							<div class="h19 text-primary pe-3">Where</div>
 							<div class="font-gothic text-white fw-800">
 								<div class="pb-2">Prince Alfed Square (353D Church St, Parramatta NSW 2150) (Free)</div>
