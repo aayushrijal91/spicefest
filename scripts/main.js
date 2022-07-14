@@ -56,6 +56,16 @@ $(() => {
         infinite: true,
         centerPadding: "120px",
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            }
+        ]
     });
 
     $(".children-entertainment-slider").slick({
@@ -67,6 +77,16 @@ $(() => {
         speed: 2000,
         cssEase: 'linear',
         infinite: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            }
+        ]
     });
 
     $(".main-dances-slider").slick({
@@ -80,5 +100,30 @@ $(() => {
         infinite: true,
         centerPadding: "120px",
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
+                }
+            }
+        ]
     });
+
+    if ($(window).width() < 540) {
+        $(".event-inclusion-slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 0,
+            speed: 2000,
+            cssEase: 'linear',
+            infinite: true,
+            centerMode: true,
+            centerPadding: "60px",
+        })
+    }
 })
