@@ -26,8 +26,8 @@
 	<header>
 		<div class="header-top-bar">
 			<div class="container">
-				<div class="row justify-content-center justify-content-md-end align-items-center">
-					<div class="col-auto d-md-none">
+				<div class="row justify-content-center justify-content-lg-end align-items-center">
+					<div class="col-auto d-lg-none">
 						<?= renderImg("mobile-logo.png", "logo") ?>
 					</div>
 					<div class="col-auto d-none d-md-inline-block">
