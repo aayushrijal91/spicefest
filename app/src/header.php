@@ -24,7 +24,7 @@
 
 <body>
 	<header>
-		<div class="header-top-bar py-3">
+		<div class="header-top-bar pt-3">
 			<div class="container">
 				<div class="row justify-content-end align-items-center">
 					<div class="col-auto">

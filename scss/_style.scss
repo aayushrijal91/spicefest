@@ -313,5 +313,14 @@ section.main {
 }
 
 footer {
+    margin-top: -1px;
     background: #DB0606;
+
+    .footer-bottom {
+        font-family: $poppins;
+        font-size: 1rem;
+        color: $white;
+        font-weight: 500;
+        padding: 67px 0 30px;
+    }
 }
