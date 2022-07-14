@@ -24,10 +24,13 @@
 
 <body>
 	<header>
-		<div class="header-top-bar pt-3">
+		<div class="header-top-bar">
 			<div class="container">
-				<div class="row justify-content-end align-items-center">
+				<div class="row justify-content-center justify-content-md-end align-items-center">
 					<div class="col-auto">
+						<?= renderImg("mobile-logo.png", "logo") ?>
+					</div>
+					<div class="col-auto d-none d-md-inline-block">
 						<div class="row justify-content-center justify-content-lg-end no-gutters align-items-center">
 							<div class="col-auto font-poppins h20">
 								This Event is <span class="fw-700">Proudly Sponsored</span> by
@@ -71,6 +74,20 @@
 							<div class="text-gradient-red h11">Time</div>
 							<div class="font-gothic h8 ps-3 fw-900 letter-spacing-n07">10am - 9pm</div>
 						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center mobile-sponsors">
+					<div class="col-12 font-poppins pb-3 text-center">
+						This Event is <span class="fw-700">Proudly Sponsored</span> by
+					</div>
+					<div class="col-auto">
+						<?= renderImg("australian-india.png", "logo") ?>
+					</div>
+					<div class="col-auto">
+						<?= renderImg("nsw-gov.png", "logo") ?>
+					</div>
+					<div class="col-auto">
+						<?= renderImg("investment-nsw.png", "logo") ?>
 					</div>
 				</div>
 			</div>

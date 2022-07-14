@@ -3,9 +3,15 @@
 }
 
 header {
-    background: imgUrl("clouds.png") center 128%, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
+    padding: 48px 0 6px;
+    background: imgUrl("mobile-header.png") center bottom, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
     background-size: contain;
-    padding: 48px 0 181px;
+
+    @include media-breakpoint-up(md) {
+        background: imgUrl("clouds.png") center 128%, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
+        background-size: contain;
+        padding: 48px 0 181px;
+    }
 
     .banner {
         position: relative;
@@ -14,6 +20,10 @@ header {
             position: absolute;
             left: 6%;
             top: 11%;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
         }
 
         .hero-img {
@@ -24,6 +34,12 @@ header {
                 right: 8rem;
                 top: 16rem;
                 z-index: 1;
+
+                @include media-breakpoint-down(sm) {
+                    right: 0;
+                    top: 2rem;
+                    width: 121px;
+                }
             }
 
             .spicefest {
@@ -44,6 +60,13 @@ header {
                 bottom: -4rem;
                 left: 12%;
                 z-index: 2;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 16.18px;
+                    padding: 8px 10px;
+                    left: 0;
+                    bottom: -2.5rem;
+                }
             }
 
             .date {
@@ -58,15 +81,34 @@ header {
                 transform: rotate(-11.45deg);
                 position: absolute;
                 font-family: "Poppins", sans-serif;
-                bottom: -5rem;
-                right: 18%;
+                bottom: -3.5rem;
+                right: 14%;
                 z-index: 3;
                 font-weight: 900;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 29.13px;
+                    padding: 10px 18px;
+                    right: 0;
+                    bottom: -3rem;
+                }
             }
         }
 
         .timing {
             padding-top: 200px;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        .mobile-sponsors {
+            padding-top: 142px;
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
         }
     }
 }
@@ -74,14 +116,23 @@ header {
 section.main {
     background: linear-gradient(180deg, #ff7631 11.6%, #fa7035 99.62%);
 
+    @include media-breakpoint-down(sm) {
+        padding-top: 94px;
+        margin-top: -1px;
+    }
+
     .event-category {
         .category-card {
             height: 100%;
             background: linear-gradient(180deg, #e24a29 0%, #ff5732 100%);
-            padding: 22px 36.71px 36.71px;
             position: relative;
             transition: 0.7s all ease;
             transform: scale(1);
+            padding: 22px 36.71px 36.71px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 13px 21px 20px;
+            }
 
             .title {
                 font-size: 2.364375rem; // 37.83px
@@ -93,7 +144,7 @@ section.main {
                 justify-content: center;
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 1rem;
+                    font-size: 1.348rem;
                 }
             }
 
@@ -105,6 +156,11 @@ section.main {
                 justify-content: center;
                 align-items: end;
 
+                @include media-breakpoint-down(sm) {
+                    height: 240px;
+                    padding: 14px;
+                }
+
                 &.win1 {
                     background: imgUrl("category-outdoor.jpg") center;
                     background-size: cover;
@@ -114,12 +170,32 @@ section.main {
                     background: imgUrl("category-indoor.jpg") center;
                     background-size: cover;
                 }
+
+                @include media-breakpoint-down(sm) {
+                    .btn {
+                        width: 100%;
+                        font-size: 1.34375rem;
+                        height: 54px;
+                        padding: 8px !important;
+                        line-height: 1;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                    }
+                }
             }
 
             .free-entry-circle {
                 position: absolute;
                 top: 2.5rem;
                 left: -3rem;
+
+                @include media-breakpoint-down(sm) {
+                    width: 97.75px;
+                    top: 2rem;
+                    left: -0.5rem;
+                }
             }
 
             .held-at-circle {
@@ -127,6 +203,12 @@ section.main {
                 top: 0;
                 top: 2.5rem;
                 right: -4rem;
+
+                @include media-breakpoint-down(sm) {
+                    width: 97.75px;
+                    top: 1.25rem;
+                    right: -0.5rem;
+                }
             }
 
             .button {
@@ -151,18 +233,62 @@ section.main {
     }
 
     .festival-overview {
-        padding: 195px 0 222px;
-        background: imgUrl("festival-overview.png") center bottom;
+        background: imgUrl("festival-overview-sm.png") center 36%;
         background-size: contain;
+        padding: 116px 0;
+
+        @include media-breakpoint-up(md) {
+            background: imgUrl("festival-overview.png") center bottom;
+            background-size: contain;
+            padding: 195px 0 222px;
+        }
     }
 
     .about-spicefest {
-        padding: 156px 0;
+        padding: 46px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 156px 0;
+        }
+
+        .hero-heading {
+            font-size: 6rem; // 96px
+            color: $white;
+            line-height: 1;
+
+            @include media-breakpoint-down(md) {
+                font-size: 4rem;
+            }
+        }
+
+        .description {
+            color: $white;
+            font-size: 1.5rem; // 24px
+            font-weight: 700;
+            font-family: $poppins;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1.25rem;
+            }
+        }
 
         .about-slider {
             .slick-slide {
                 margin: 0 12px;
+
+                @include media-breakpoint-down(sm) {
+                    margin: 0 6px;
+                }
             }
+        }
+
+        .enquire-btn-sm {
+            font-size: 1.5rem;
+            display: block;
+            border-radius: 0;
+            color: $white;
+            font-family: $poppins;
+            font-weight: 700;
         }
     }
 
@@ -314,7 +440,7 @@ section.main {
 
 footer {
     margin-top: -1px;
-    background: #DB0606;
+    background: #db0606;
 
     .footer-bottom {
         font-family: $poppins;

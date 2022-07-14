@@ -1,6 +1,6 @@
 const { src, dest, watch } = require("gulp");
 const path = require('path');
-const sass = require("gulp-sass")(require('sass'));
+const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
@@ -48,6 +48,5 @@ function watchTask() {
     watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
 }
 
-exports.style = style;
 exports.watch = watchTask;
 

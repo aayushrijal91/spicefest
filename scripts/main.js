@@ -35,6 +35,14 @@ $(() => {
         cssEase: 'linear',
         infinite: true,
         centerPadding: "60px",
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     })
 
     $(".cuisine-slider").slick({
