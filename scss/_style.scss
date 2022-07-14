@@ -80,6 +80,8 @@ section.main {
             background: linear-gradient(180deg, #e24a29 0%, #ff5732 100%);
             padding: 22px 36.71px 36.71px;
             position: relative;
+            transition: 0.7s all ease;
+            transform: scale(1);
 
             .title {
                 font-size: 2.364375rem; // 37.83px
@@ -126,6 +128,25 @@ section.main {
                 top: 2.5rem;
                 right: -4rem;
             }
+
+            .button {
+                font-family: $poppins;
+                border-radius: 0;
+                font-weight: 700;
+                color: $dark;
+                background: $primary;
+                transition: 0.7s all ease;
+            }
+
+            &:hover {
+                background: $primary;
+                transform: scale(1.04);
+
+                .button {
+                    background: $secondary;
+                    border-color: $secondary;
+                }
+            }
         }
     }
 
@@ -134,4 +155,163 @@ section.main {
         background: imgUrl("festival-overview.png") center bottom;
         background-size: contain;
     }
+
+    .about-spicefest {
+        padding: 156px 0;
+
+        .about-slider {
+            .slick-slide {
+                margin: 0 12px;
+            }
+        }
+    }
+
+    .event-inclusions {
+        background: imgUrl("inclusion.png") center bottom;
+        background-size: contain;
+        padding: 282px 0 437px;
+
+        .float-title {
+            position: absolute;
+            top: -4rem;
+            left: -2rem;
+            color: $white;
+            background-color: $very-spicy;
+            text-transform: uppercase;
+            padding: 24px;
+            font-size: 2.0175rem;
+            transform: rotate(-19.35deg);
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .inclusion-card {
+            height: 318px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 17px 9px rgba(0, 0, 0, 0.35);
+            }
+
+            $inclusions: "free-entry", "food-truck", "desserts", "entertainment", "drums", "dancing";
+
+            @each $img in $inclusions {
+                &.#{$img} {
+                    background: imgUrl("inclusion-#{$img}.png") center;
+                    background-size: cover;
+                }
+            }
+
+            .caption {
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background: #e84521;
+                padding: 16px;
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 1;
+                height: 90px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+    .indoor-event-inclusion {
+        padding: 158px 0 41px;
+        background: imgUrl("look-forward-to-clouds.png") center bottom, linear-gradient(#f35328 0%, #ef4a26 100%);
+
+        .float-title {
+            position: absolute;
+            top: -4rem;
+            left: -2rem;
+            color: $white;
+            background-color: $very-spicy;
+            text-transform: uppercase;
+            padding: 24px;
+            font-size: 2.0175rem;
+            transform: rotate(-19.35deg);
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .content {
+            background: #e82d21;
+            padding: 54px 68px;
+        }
+
+        .look-forward-to {
+            color: white;
+            text-align: center;
+            padding-top: 572px;
+            font-size: 6rem; // 96px
+            margin-bottom: 0;
+            line-height: 1;
+
+            @include media-breakpoint-down(md) {
+                font-size: 3rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .bottom-section {
+        background: linear-gradient(180deg, #ff8335 0.87%, #f5572a 99.62%);
+
+        .variety {
+            padding: 80px 0;
+
+            .variety-slider {
+                .slick-slide {
+                    margin: 0 8px;
+                }
+
+                .variety-slider-wrapper {
+                    .caption {
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        background: #e84521;
+                        padding: 16px;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        line-height: 1;
+                        height: 90px;
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sponsors {
+            padding: 80px 0;
+            background: imgUrl("sponsors-monuments.png") center bottom;
+            background-size: contain;
+        }
+    }
+}
+
+footer {
+    background: #DB0606;
 }

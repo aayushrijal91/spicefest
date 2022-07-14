@@ -39,9 +39,6 @@
 								<?= renderImg("nsw-gov.png", "logo") ?>
 							</div>
 							<div class="col-auto">
-								<?= renderImg("parramatta-council.png", "logo") ?>
-							</div>
-							<div class="col-auto">
 								<?= renderImg("investment-nsw.png", "logo") ?>
 							</div>
 						</div>

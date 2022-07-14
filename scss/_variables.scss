@@ -1,6 +1,9 @@
 $primary: #FFB848;
 $secondary: #FF7A32;
 $tertiary: #FFD752;
+$quartinary: #FFCC4E;
+$spicy: #E20505;
+$very-spicy: #D60707;
 $dark: #452B1C;
 $light: #e5e5e5;
 $black: #000000;
@@ -12,10 +15,13 @@ $theme-colors: map-merge(
         "primary": $primary,
         "secondary": $secondary,
         "tertiary": $tertiary,
+        "quartinary": $quartinary,
         "dark": $dark,
         "light": $light,
         "black": $black,
         "white": $white,
+        "spicy": $spicy,
+        "very-spicy": $very-spicy,
     ),
     $theme-colors
 );
@@ -62,3 +68,4 @@ $spacers: map-merge(
 );
 
 $form-group-margin-bottom: 0 !default;
+$enable-negative-margins: true;
