@@ -1,11 +1,11 @@
 <footer>
 	<div class="footer-top">
 		<div class="container">
-			<div class="row justify-content-center justify-content-lg-between align-items-center py-3 py-lg-4">
+			<div class="row justify-content-center justify-content-md-between align-items-center py-3 py-lg-4">
 				<div class="col-auto">
 					<a href="./"><?= renderImg("footer-logo.png", "logo") ?></a>
 				</div>
-				<div class="col-12 col-md-5 col-xxl-auto">
+				<div class="col-12 col-md-5 col-xxl-auto d-md-none d-lg-block">
 					<div class="py-5 pt-md-0 ps-xxl-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
 					<div class="row">
 						<div class="col-12 col-md-auto">
@@ -33,6 +33,22 @@
 				</div>
 				<div class="col-auto pt-5 pt-md-0">
 					<?= renderImg("disclaimer.png", "lib") ?>
+				</div>
+				<div class="col-12 d-none d-md-block d-lg-none pt-6">
+					<div class="py-5 pt-md-0 ps-xxl-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
+					<div class="row">
+						<div class="col-12 col-md-auto">
+							<div class="h19 text-primary">Date <span class="ps-2 text-white font-gothic fw-800">7 August 2022</span></div>
+							<div class="h19 text-primary">Time <span class="ps-2 text-white font-gothic fw-800">10am - 9pm</span></div>
+						</div>
+						<div class="col-12 col-md col-xxl-auto d-flex pt-3 pt-md-0">
+							<div class="h19 text-primary pe-3">Where</div>
+							<div class="font-gothic text-white fw-800">
+								<div class="pb-2">Prince Alfed Square (353D Church St, Parramatta NSW 2150) (Free)</div>
+								<div>Riverside Theatre (Corner Market &, Church St, Parramatta NSW 2150) (Ticketed)</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -69,9 +85,9 @@
 				<div class="col-auto d-none d-md-block">
 					<div class="row justify-content-center justify-content-lg-end align-items-center">
 						<div class="col-auto">Copyright <?= date('Y') ?></div>
-						<div class="col-auto px-2 px-md-4 px-xxl-5 fw-500">/</div>
+						<div class="col-auto px-2 px-md-0 px-lg-4 px-xxl-5 fw-500">/</div>
 						<div class="col-auto"><?= $site ?></div>
-						<div class="col-auto px-2 px-md-4 px-xxl-5 fw-500">/</div>
+						<div class="col-auto px-2 px-md-0 px-lg-4 px-xxl-5 fw-500">/</div>
 						<div class="col-auto">All Rights Reserved</div>
 					</div>
 				</div>
