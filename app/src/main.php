@@ -84,9 +84,9 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="about-spicefest">
-        <div class="container-fluid pe-xl-0">
+        <div class="container-fluid pe-xxl-0">
             <div class="row justify-content-end">
-                <div class="col-12 col-lg-11">
+                <div class="col-12 col-xxl-11">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-12 col-xl-4">
                             <div class="hero-heading pb-1 pb-md-3">

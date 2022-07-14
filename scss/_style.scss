@@ -21,6 +21,10 @@ header {
             left: 6%;
             top: 11%;
 
+            @include media-breakpoint-only(xl) {
+                top: -5%;
+            }
+
             @include media-breakpoint-down(sm) {
                 display: none;
             }
@@ -34,6 +38,11 @@ header {
                 right: 8rem;
                 top: 16rem;
                 z-index: 1;
+
+                @include media-breakpoint-only(xl) {
+                    right: 0;
+                    top: 8rem;
+                }
 
                 @include media-breakpoint-down(sm) {
                     right: 0;
@@ -61,6 +70,11 @@ header {
                 left: 12%;
                 z-index: 2;
 
+                @include media-breakpoint-only(xl) {
+                    left: 2%;
+                    bottom: -6.5rem;
+                }
+
                 @include media-breakpoint-down(sm) {
                     font-size: 16.18px;
                     padding: 8px 10px;
@@ -85,6 +99,11 @@ header {
                 right: 14%;
                 z-index: 3;
                 font-weight: 900;
+
+                @include media-breakpoint-only(xl) {
+                    right: 2%;
+                    bottom: -5.5rem;
+                }
 
                 @include media-breakpoint-down(sm) {
                     font-size: 29.13px;
@@ -414,7 +433,11 @@ section.main {
             background: #e82d21;
             padding: 20px;
 
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
+                padding: 54px 24px;
+            }
+
+            @include media-breakpoint-up(xxl) {
                 padding: 54px 68px;
             }
 

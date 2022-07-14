@@ -5,8 +5,8 @@
 				<div class="col-auto">
 					<a href="./"><?= renderImg("footer-logo.png", "logo") ?></a>
 				</div>
-				<div class="col-12 col-md-auto">
-					<div class="py-5 pt-md-0 ps-md-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
+				<div class="col-12 col-md-5 col-xxl-auto">
+					<div class="py-5 pt-md-0 ps-xxl-7 pb-md-4 text-white h10 text-center">Immerse In Food, Dance, Music</div>
 					<div class="row">
 						<div class="col-12 col-md-auto">
 							<div class="row h19 text-primary d-md-none">
@@ -22,7 +22,7 @@
 								<div class="h19 text-primary">Time <span class="ps-2 text-white font-gothic fw-800">10am - 9pm</span></div>
 							</div>
 						</div>
-						<div class="col-12 col-md-auto d-flex pt-3 pt-md-0">
+						<div class="col-12 col-md col-xxl-auto d-flex pt-3 pt-md-0">
 							<div class="h19 text-primary pe-3">Where</div>
 							<div class="font-gothic text-white fw-800">
 								<div class="pb-2">Prince Alfed Square (353D Church St, Parramatta NSW 2150) (Free)</div>

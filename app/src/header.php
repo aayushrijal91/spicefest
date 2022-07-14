@@ -27,7 +27,7 @@
 		<div class="header-top-bar">
 			<div class="container">
 				<div class="row justify-content-center justify-content-md-end align-items-center">
-					<div class="col-auto">
+					<div class="col-auto d-md-none">
 						<?= renderImg("mobile-logo.png", "logo") ?>
 					</div>
 					<div class="col-auto d-none d-md-inline-block">
@@ -53,7 +53,7 @@
 			<?= renderImg("fia-presents.png", "lib", "fia-presents") ?>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-auto">
+					<div class="col-auto col-xl-9 col-xxl-auto">
 						<div class="hero-img">
 							<?= renderImg("spicefest-gif.gif", "lib", "spicefest") ?>
 							<?= renderImg("buy-tickets.png", "lib", "buy-tickets") ?>
