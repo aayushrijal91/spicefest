@@ -249,6 +249,22 @@ include __DIR__ . '/header.php';
                     <div><?= renderImg("french.jpg", "lib", "w-100") ?></div>
                     <div class="caption">French</div>
                 </div>
+                <div class="variety-slider-wrapper">
+                    <div><?= renderImg("turkish.jpg", "lib", "w-100") ?></div>
+                    <div class="caption">Turkish</div>
+                </div>
+                <div class="variety-slider-wrapper">
+                    <div><?= renderImg("thai.jpg", "lib", "w-100") ?></div>
+                    <div class="caption">Thai</div>
+                </div>
+                <div class="variety-slider-wrapper">
+                    <div><?= renderImg("desserts.jpg", "lib", "w-100") ?></div>
+                    <div class="caption">Dessert</div>
+                </div>
+                <div class="variety-slider-wrapper">
+                    <div><?= renderImg("snacks.jpg", "lib", "w-100") ?></div>
+                    <div class="caption">Snacks</div>
+                </div>
             </div>
             <div class="container d-none d-md-block">
                 <div class="row justify-content-end">
