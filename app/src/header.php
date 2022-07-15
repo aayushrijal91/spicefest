@@ -77,9 +77,6 @@
 							<div class="col-auto">
 								<?= renderImg("nsw-gov.png", "logo") ?>
 							</div>
-							<div class="col-auto">
-								<?= renderImg("investment-nsw.png", "logo") ?>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -122,9 +119,6 @@
 					</div>
 					<div class="col-auto">
 						<?= renderImg("nsw-gov.png", "logo") ?>
-					</div>
-					<div class="col-auto">
-						<?= renderImg("investment-nsw.png", "logo") ?>
 					</div>
 				</div>
 				<div class="row justify-content-center align-items-center pt-5 d-md-none">
