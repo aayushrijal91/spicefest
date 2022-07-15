@@ -275,7 +275,7 @@ include __DIR__ . '/header.php';
                                 <div class="caption">Face Painting</div>
                             </div>
                             <div class="variety-slider-wrapper">
-                                <div><?= renderImg("amusement-rides.jpg", "lib", "w-100") ?></div>
+                                <div><?= renderImg("theatrical-performances.jpg", "lib", "w-100") ?></div>
                                 <div class="caption">Theatrical<br> Performances</div>
                             </div>
                         </div>
