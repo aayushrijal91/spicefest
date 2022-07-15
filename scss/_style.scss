@@ -502,6 +502,11 @@ section.main {
                     color: #ffe07d;
                 }
             }
+
+            @include media-breakpoint-down(sm) {
+                background: imgUrl("outdoor-clouds.png") center right;
+            }
+            
         }
 
         @include media-breakpoint-down(xl) {
