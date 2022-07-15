@@ -78,7 +78,17 @@ include __DIR__ . '/header.php';
             <div class="d-flex align-items-center flex-column w-100">
                 <div class="d-md-none"><?= renderImg("food-dance-music-sm.png", "lib") ?></div>
                 <div class="d-none d-md-block"><?= renderImg("food-dance-music.png", "lib") ?></div>
-                <div class="pt-4"><?= renderImg("holi-img.png", "lib") ?></div>
+                <div class="pt-4 d-md-none"><?= renderImg("holi-img.png", "lib") ?></div>
+            </div>
+            <div class="row justify-content-center pt-4 d-none d-md-flex">
+                <div class="col-auto">
+                    <div class="festival-floating-img">
+                        <?= renderImg("fest-1.png", "lib", "fest-1") ?>
+                        <?= renderImg("fest-2.png", "lib", "fest-2") ?>
+                        <?= renderImg("fest-3.png", "lib", "fest-3") ?>
+                        <?= renderImg("fest-4.png", "lib", "fest-4") ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

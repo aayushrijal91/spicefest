@@ -328,6 +328,94 @@ section.main {
         @include media-breakpoint-up(lg) {
             padding: 195px 0 222px;
         }
+
+        .festival-floating-img {
+            position: relative;
+            width: 883px;
+            height: 437px;
+
+            @include media-breakpoint-down(lg) {
+                width: 600px;
+                height: 355px;
+            }
+
+            .fest-1 {
+                position: absolute;
+                top: 18%;
+                animation: bounce 6s infinite linear;
+
+                @include media-breakpoint-down(lg) {
+                    width: 37%;
+                }
+            }
+
+            .fest-2 {
+                position: absolute;
+                bottom: 0;
+                left: 18%;
+                animation: bounce2 6s infinite linear;
+
+                @include media-breakpoint-down(lg) {
+                    width: 20%;
+                }
+            }
+
+            .fest-3 {
+                position: absolute;
+                top: 0;
+                left: 27%;
+                z-index: 10;
+                animation: bounce2 7s infinite linear;
+
+                @include media-breakpoint-down(lg) {
+                    width: 57%;
+                    left: 24%;
+                }
+            }
+
+            .fest-4 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                animation: bounce 6s infinite linear;
+
+                @include media-breakpoint-down(lg) {
+                    width: 40%;
+                }
+            }
+
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0rem);
+                }
+                50% {
+                    transform: translateY(-1rem);
+
+                    @include media-breakpoint-up(xl) {
+                        transform: translateY(-3rem);
+                    }
+                }
+                100% {
+                    transform: translateY(0rem);
+                }
+            }
+
+            @keyframes bounce2 {
+                0% {
+                    transform: translateY(0rem);
+                }
+                50% {
+                    transform: translateY(1rem);
+
+                    @include media-breakpoint-down(lg) {
+                        transform: translateY(0.35rem);
+                    }
+                }
+                100% {
+                    transform: translateY(0rem);
+                }
+            }
+        }
     }
 
     .about-spicefest {
