@@ -712,6 +712,10 @@ footer {
     margin-top: -1px;
     background: #db0606;
 
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 82px;
+    }
+
     .footer-bottom {
         font-family: $poppins;
         font-size: 1rem;
