@@ -1,4 +1,4 @@
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#about-spicefest"], a[href="#outdoor-events"], a[href="#indoor-events"], a[href="#what-to-expect"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -67,6 +67,8 @@ $(() => {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
                 }
             }
         ]
@@ -94,6 +96,8 @@ $(() => {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
                 }
             }
         ]
@@ -123,6 +127,8 @@ $(() => {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: false,
+                    centerPadding: 0,
                 }
             }
         ]

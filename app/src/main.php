@@ -42,7 +42,7 @@ include __DIR__ . '/header.php';
                                     <div class="ps-3">Outdoor Event</div>
                                 </div>
                                 <div class="window win1">
-                                    <a class="btn h16 px-md-5 py-3 button" target="_blank" href="https://linktr.ee/spicefest">Save the Date</a>
+                                    <a class="btn h16 px-md-5 py-3 button" target="_blank" href="https://www.facebook.com/events/1226988954770278/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A404367381508060%7D%7D]%22%7D">Save the Date</a>
                                 </div>
                             </div>
                         </div>
@@ -78,12 +78,12 @@ include __DIR__ . '/header.php';
             <div class="d-flex align-items-center flex-column w-100">
                 <div class="d-md-none"><?= renderImg("food-dance-music-sm.png", "lib") ?></div>
                 <div class="d-none d-md-block"><?= renderImg("food-dance-music.png", "lib") ?></div>
-                <div class="pt-4"><?= renderImg("holi-img.gif", "lib") ?></div>
+                <div class="pt-4"><?= renderImg("holi-img.png", "lib") ?></div>
             </div>
         </div>
     </div>
 
-    <div class="about-spicefest">
+    <div class="about-spicefest" id="about-spicefest">
         <div class="container-fluid pe-xxl-0">
             <div class="row justify-content-end">
                 <div class="col-12 col-xxl-11">
@@ -95,7 +95,7 @@ include __DIR__ . '/header.php';
                             <div class="description py-4 pe-xxl-4">
                                 Welcome to a unique day and night festival experience held both indoor and outdoors, where spicy food, music and dance coalesce culminating in proximity fireworks!
                             </div>
-                            <div class="d-none d-xl-block pt-3"><a href="#form" class="btn btn-spicy px-6 py-3 enquire-btn">Enquire</a></div>
+                            <div class="d-none d-xl-block pt-3"><a href="https://www.facebook.com/parramatta.spicefest/" class="btn btn-spicy px-6 py-3 enquire-btn">Enquire</a></div>
                         </div>
                         <div class="col-12 col-xl-7 pt-2 pt-xl-0">
                             <div class="about-slider">
@@ -106,14 +106,14 @@ include __DIR__ . '/header.php';
                                 <div><?= renderImg("about-5.png", "lib", "w-100") ?></div>
                             </div>
                         </div>
-                        <div class="col-12 d-xl-none pt-5"><a href="#form" class="btn btn-spicy enquire-btn p-3">Enquire</a></div>
+                        <div class="col-12 d-xl-none pt-5"><a href="https://www.facebook.com/parramatta.spicefest/" target="_blank" class="btn btn-spicy enquire-btn p-3">Enquire</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="event-inclusions">
+    <div class="event-inclusions" id="outdoor-events">
         <div class="container position-relative">
             <div class="float-title"><span>Outdoor</span> event includes</div>
             <div class="row justify-content-center">
@@ -155,7 +155,7 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 
-    <div class="indoor-event-inclusion">
+    <div class="indoor-event-inclusion" id="indoor-events">
         <div class="container position-relative">
             <div class="float-title"><span>Indoor</span> event includes</div>
             <div class="row justify-content-center">
@@ -185,7 +185,7 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 
-    <div class="bottom-section">
+    <div class="bottom-section" id="what-to-expect">
         <div class="look-forward-to">Look Forward To</div>
         <div class="variety">
             <div class="container">

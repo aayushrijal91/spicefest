@@ -11,6 +11,31 @@
 </head>
 
 <body>
+	<div class="sticky-menu">
+		<div class="container-fluid">
+			<div class="row justify-content-between">
+				<div class="col-auto">
+					<div class="row gx-2">
+						<div class="col-auto py-2">
+							<a href="#about-spicefest" class="btn btn-extra-dark rounded-0 font-poppins py-3 px-5 h16 fw-700">About SpiceFest</a>
+						</div>
+						<div class="col-auto py-2">
+							<a href="#outdoor-events" class="btn btn-extra-dark rounded-0 font-poppins py-3 px-5 h16 fw-700">Outdoor Event</a>
+						</div>
+						<div class="col-auto py-2">
+							<a href="#indoor-events" class="btn btn-extra-dark rounded-0 font-poppins py-3 px-5 h16 fw-700">Indoor Event</a>
+						</div>
+						<div class="col-auto py-2">
+							<a href="#what-to-expect" class="btn btn-extra-dark rounded-0 font-poppins py-3 px-5 h16 fw-700">What To Expect</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto py-2">
+					<a href="https://linktr.ee/spicefest" target="_blank" class="btn btn-spicy rounded-0 font-poppins py-3 px-5 h16 fw-700">Get Tickets Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="header-top-bar">
 			<div class="container">
@@ -37,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="banner">
+		<div class="banner mt-xl-n5">
 			<?= renderImg("fia-presents.png", "lib", "fia-presents") ?>
 			<div class="container">
 				<div class="row justify-content-center">

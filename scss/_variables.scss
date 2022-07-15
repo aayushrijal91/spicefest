@@ -5,6 +5,7 @@ $quartinary: #FFCC4E;
 $spicy: #E20505;
 $very-spicy: #D60707;
 $dark: #452B1C;
+$extra-dark: #372114;
 $light: #e5e5e5;
 $black: #000000;
 $white: #ffffff;
@@ -17,6 +18,7 @@ $theme-colors: map-merge(
         "tertiary": $tertiary,
         "quartinary": $quartinary,
         "dark": $dark,
+        "extra-dark": $extra-dark,
         "light": $light,
         "black": $black,
         "white": $white,

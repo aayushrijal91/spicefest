@@ -2,6 +2,18 @@
     @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+.sticky-menu {
+    width: 100%;
+    background-color: $dark;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+
+    @include media-breakpoint-down(xl) {
+        display: none;
+    }
+}
+
 header {
     padding: 48px 0 6px;
     background: imgUrl("mobile-header.png") center bottom, linear-gradient(0deg, #ff7a32 0%, #ffd752 100%);
